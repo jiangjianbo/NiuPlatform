@@ -104,6 +104,7 @@ joomla.install();
 abstract class Operation{
 
     public void require(){
+        require_depends()
         if( !check() ){
             install();
         }
@@ -126,14 +127,14 @@ abstract class Operation{
         return _dir_exist(program_dir)
     }
 
-    protected abstract void install_required();
+    protected abstract void require_depends();
 
     public void install(){
+        require_depends()
+
         if( check() ) return;
         ant.echo(message:"install ${app}")
         ant.mkdir(dir: data_dir)
-
-        install_required();
 
         if( !_file_exist("${package_dir}/${package_file}") )
             download();
@@ -173,7 +174,7 @@ class ApacheOp{
     }
 
     public boolean check(){
-        return _dir_exist(program_apache_dir) &&
+        return _dir_exist(program_apache_dir) &&         false &&
                 _file_exist("${program_apache_dir}/bin/httpd.exe") &&
                 _file_exist("${program_apache_dir}/conf/httpd.conf");
     }
@@ -203,7 +204,7 @@ class ApacheOp{
         apache.config_enable_module("rewrite_module", true)
         apache.config_change("Listen", "8080", "80")
         apache.config_set_multi("Listen", "8080")
-        //apache.config_set_relat("DocumentRoot", data_apache_dir)
+        apache.config_set_docroot(data_apache_dir)
     }
 
     void config_change(String name, String value, String newValue){
@@ -225,6 +226,21 @@ class ApacheOp{
                 byline:"true",
                 match:"^((\\s*)${name}(\\s+)[\"\']?.+[\"\']?)\$",
                 replace:"\\1\r\n\\2${name}\\3${multiValue}")
+    }
+
+    void config_set_docroot(String docroot, String file = null){
+        String match = "DocumentRoot"
+        ant.loadfile(property:"conf", srcFile: file?:"${program_apache_dir}/conf/httpd.conf")
+        String text = ant.getProject().getProperty("conf");
+        def mm = text =~ /(?m)${match}/
+        def r = mm.matches()
+        if( mm.matches() ){
+            String value = mm[0][0]
+            ant.replaceregexp(file:"${program_apache_dir}/conf/httpd.conf",
+                    byline:"true",
+                    match: "\"${value}\"",
+                    replace:"\"${docroot}\"")
+        }
     }
 
     void config_enable_module(String name, boolean enable){
@@ -253,6 +269,8 @@ class ApacheOp{
 class PhpOp{
 
     public void require(){
+        apache.require()
+        mysql.require()
         if( !php.check() ){
             php.install();
         }
@@ -288,7 +306,12 @@ class PhpOp{
             ant.unzip(src:"${package_dir}/${package_php}" , dest: program_php_dir);
         if( !php.check() ){
             _adjust_level(program_php_dir, "php.exe", "php.exe")
-            php.config()
+            try{
+                php.config()
+            }catch(Exception e){
+                // rollback to unchecked
+                ant.delete(file:"${program_php_dir}/php.ini")
+            }
         }
     }
 
@@ -308,7 +331,9 @@ LoadFile \"${program_php_dir}/php5ts.dll\"
 # microsoft sql server lib
 # LoadFile \"${program_php_dir}/ntwdblib.dll\"
 
-LoadModule php5_module \"${program_php_dir}/php5apache2_2.dll\"
+#LoadModule php5_module \"${program_php_dir}/php5apache2_2.dll\"
+LoadModule php5_module \"${program_php_dir}/php5apache2_4.dll\"
+
 AddType application/x-httpd-php .php
 """
         ant.echo(message: message, 
@@ -318,7 +343,7 @@ AddType application/x-httpd-php .php
         ant.replaceregexp(file:"${apache.program_apache_dir}/conf/extra/niu-php.conf",
                 byline:"true",
                 match:"^(\\s*LoadFile\\s+).+/lib/libmysql\\.dll(.+)\$",
-                replace:"\\1 \"${program_mysql_dir}/lib/libmysql.dll\"")
+                replace:"\\1 \"${mysql.program_mysql_dir}/lib/libmysql.dll\"")
 
         php.config_set("max_execution_time", "30")
         php.config_set("session.save_path", "\"${data_php_dir}/session\"")
@@ -453,9 +478,16 @@ class MysqlOp{
 class JoomlaOp{
 
     public void require(){
+        require_depends()
         if( !joomla.check() ){
             joomla.install();
         }
+    }
+
+    protected void require_depends(){
+        apache.require();
+        php.require();
+        mysql.require();
     }
 
     String program_joomla_name = "Joomla_3.0.3-Stable-Full_Package"
@@ -476,13 +508,10 @@ class JoomlaOp{
     }
 
     public void install(){
+        joomla.require_depends()
         if( joomla.check() ) return;
         ant.echo(message:"install joomla")
         ant.mkdir(dir: data_joomla_dir)
-
-        apache.require();
-        php.require();
-        mysql.require();
 
         if( !_file_exist("${package_dir}/${package_joomla}") )
             joomla.download();

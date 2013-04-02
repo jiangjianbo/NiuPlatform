@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee92512d-2e56-43c6-a72e-2a357143ebfa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/ant.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/jjb.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/niuplatform.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/niuplatform.iml" afterPath="$PROJECT_DIR$/niuplatform.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/niuplatform.groovy" afterPath="$PROJECT_DIR$/src/niuplatform.groovy" />
     </list>
     <ignored path="niuplatform.iws" />
@@ -26,6 +20,34 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/src/niuplatform.groovy" line="236" class="ApacheOp" package="">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/niuplatform.groovy" line="237" class="ApacheOp" package="">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_any>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -39,8 +61,8 @@
         <option name="CONDITION_ENABLED" value="false" />
         <option name="CLASS_FILTERS_ENABLED" value="false" />
         <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
+        <option name="CONDITION" value="&#13;&#13;JAVA" />
+        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
       </breakpoint>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -54,12 +76,29 @@
         <option name="CONDITION_ENABLED" value="false" />
         <option name="CLASS_FILTERS_ENABLED" value="false" />
         <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
+        <option name="CONDITION" value="&#13;&#13;JAVA" />
+        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
       </breakpoint>
     </breakpoint_any>
     <breakpoint_rules />
-    <ui_properties />
+    <ui_properties>
+      <property name="line_breakpoints_groupByMethods" value="false" />
+      <property name="line_breakpoints_viewId" value="TABLE" />
+      <property name="exception_breakpoints_flattenPackages" value="true" />
+      <property name="method_breakpoints_flattenPackages" value="true" />
+      <property name="field_breakpoints_flattenPackages" value="true" />
+      <property name="exception_breakpoints_groupByMethods" value="false" />
+      <property name="line_breakpoints_groupByClasses" value="true" />
+      <property name="method_breakpoints_viewId" value="TABLE" />
+      <property name="field_breakpoints_groupByMethods" value="false" />
+      <property name="line_breakpoints_flattenPackages" value="true" />
+      <property name="field_breakpoints_groupByClasses" value="true" />
+      <property name="method_breakpoints_groupByClasses" value="true" />
+      <property name="exception_breakpoints_viewId" value="TABLE" />
+      <property name="exception_breakpoints_groupByClasses" value="true" />
+      <property name="field_breakpoints_viewId" value="TABLE" />
+      <property name="method_breakpoints_groupByMethods" value="false" />
+    </ui_properties>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="niuplatform" />
@@ -69,9 +108,20 @@
       <file leaf-file-name="niuplatform.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/niuplatform.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="45" selection-start="768" selection-end="768" vertical-scroll-proportion="0.73994637">
+            <state line="236" column="0" selection-start="7872" selection-end="7872" vertical-scroll-proportion="0.33333334">
               <folding>
                 <element signature="e#23#52#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AttributesImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://D:/tools/dev/lang/java/jdk1.7.0_09/src.zip!/org/xml/sax/helpers/AttributesImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="82" column="0" selection-start="2135" selection-end="2135" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#18224#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -231,9 +281,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RunManager" selected="Groovy.niuplatform">
     <configuration default="false" name="niuplatform" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
@@ -253,17 +303,6 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
-      <option name="PROGRAM_PARAMETERS" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
       <module name="" />
       <setting name="path" value="" />
@@ -271,6 +310,17 @@
       <setting name="params" value="" />
       <setting name="workDir" value="F:\work\niuplatform" />
       <setting name="debug" value="false" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -287,24 +337,6 @@
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -334,6 +366,24 @@
       <envs />
       <properties />
       <listeners />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -424,7 +474,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -442,7 +492,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24918832" sideWeight="0.6710098" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24918832" sideWeight="0.6026059" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -532,87 +582,62 @@
     </entry>
     <entry file="jar://D:/tools/dev/lang/groovy-2.1.2/lib/groovy-2.1.2.jar!/org/codehaus/groovy/runtime/callsite/CallSiteArray.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="35" selection-start="906" selection-end="1117" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="16" column="35" selection-start="906" selection-end="1117" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://D:/tools/dev/lang/groovy-2.1.2/source/groovy-2.1.2/src/main/org/codehaus/groovy/runtime/ArrayUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="0" selection-start="2369" selection-end="2369" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="70" column="0" selection-start="2369" selection-end="2369" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="jar://D:/tools/dev/lang/java/jdk1.7.0_09/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="500" selection-end="500" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="36" column="0" selection-start="500" selection-end="500" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://D:/tools/dev/lang/groovy-2.1.2/source/groovy-2.1.2/src/main/org/codehaus/groovy/reflection/CachedMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="295" column="0" selection-start="9540" selection-end="9540" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="295" column="0" selection-start="9540" selection-end="9540" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://D:/tools/dev/lang/groovy-2.1.2/source/groovy-2.1.2/src/main/groovy/lang/MetaClassImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3092" column="0" selection-start="133717" selection-end="133717" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="3092" column="0" selection-start="133717" selection-end="133717" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://D:/tools/dev/lang/groovy-2.1.2/source/groovy-2.1.2/src/main/org/codehaus/groovy/runtime/callsite/StaticMetaMethodSite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="1723" selection-end="1723" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="49" column="0" selection-start="1723" selection-end="1723" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://D:/tools/dev/lang/groovy-2.1.2/source/groovy-2.1.2/src/main/org/codehaus/groovy/reflection/ClassLoaderForClassArtifacts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="0" selection-start="1965" selection-end="1965" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="57" column="0" selection-start="1965" selection-end="1965" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="jar://D:/tools/dev/lang/java/jdk1.7.0_09/src.zip!/java/lang/ClassLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="500" column="0" selection-start="18962" selection-end="18962" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="500" column="0" selection-start="18962" selection-end="18962" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://D:/tools/dev/lang/groovy-2.1.2/source/groovy-2.1.2/src/main/org/codehaus/groovy/runtime/callsite/CallSiteArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="0" selection-start="2012" selection-end="2012" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#2509#2830#0" expanded="true" />
-            <element signature="e#2819#2820#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="52" column="0" selection-start="2012" selection-end="2012" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://D:/tools/dev/lang/groovy-2.1.2/source/groovy-2.1.2/src/main/org/codehaus/groovy/runtime/callsite/AbstractCallSite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="172" column="0" selection-start="5709" selection-end="5709" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="172" column="0" selection-start="5709" selection-end="5709" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="jar://D:/tools/dev/lang/java/jdk1.7.0_09/src.zip!/org/xml/sax/helpers/AttributesImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="0" selection-start="2135" selection-end="2135" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="82" column="0" selection-start="2135" selection-end="2135" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/niuplatform.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="45" selection-start="768" selection-end="768" vertical-scroll-proportion="0.73994637">
+        <state line="236" column="0" selection-start="7872" selection-end="7872" vertical-scroll-proportion="0.33333334">
           <folding>
             <element signature="e#23#52#0" expanded="true" />
           </folding>
